@@ -1,0 +1,135 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: darkkhaki;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: wheat;
+  padding: 2rem 4rem;
+  border-radius: 1.5rem;
+}
+
+.container strong {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rating {
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.rating:active {
+  transform: scale(0.97);
+}
+
+.rating:hover,
+.rating.active {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.191);
+}
+
+.rating p {
+  font-size: 8rem;
+}
+
+.rating h2 {
+  margin: 1rem 0;
+}
+
+.container button {
+  background-color: brown;
+  color: white;
+  padding: 1rem 2rem;
+  border: 0;
+  cursor: pointer;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  /* transition: transform 0.1s ease-in-out; */
+}
+
+.container button:hover {
+  box-shadow: 0 0 10px rgba(165, 42, 42, 0.698);
+}
+
+.container button:active {
+  transform: scale(0.97);
+}
+
+.after-submitted {
+  text-align: center;
+}
+
+.after-submitted h1 {
+  font-size: 5rem;
+}
+
+.after-submitted h2 {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.after-submitted strong {
+  font-size: 2.5rem;
+}
+
+.after-submitted p {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
+/* for Tablets */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* for Smart Phones  */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    margin: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .rating {
+    margin: 0.6rem;
+  }
+}

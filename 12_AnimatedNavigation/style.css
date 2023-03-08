@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: whitesmoke;
+   background-image: linear-gradient(
+      to bottom,
+      whitesmoke 0%,
+      whitesmoke 50%,
+      lightblue 50%,
+      lightblue 100%
+   );
+   font-family: "Ubuntu", sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   /* overflow: hidden;  */
+}
+
+nav {
+   background-color: rgb(219, 158, 45);
+   width: 80px;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 3px solid black;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
+   border-image: linear-gradient(to bottom, lightblue 50%, whitesmoke 50%) 5;
+   transition: width 0.6s linear;
+}
+
+nav.active {
+   width: 450px;
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 0;
+   transition: width 0.6s linear;
+}
+
+nav.active ul {
+   width: 100%;
+}
+
+nav ul li {
+   transform: rotateY(0deg);
+   opacity: 0;
+   list-style-type: none;
+   transition: transform 0.6s linear, opacity 0.6s linear;
+   /* padding: 0 10px;   */
+}
+
+nav.active ul li {
+   transform: rotateY(360deg);
+   opacity: 1;
+}
+
+nav ul li a {
+   position: relative;
+   color: white;
+   text-decoration: none;
+   margin: 0 10px;
+}
+
+.btn {
+   background-color: rgb(219, 158, 45);
+   border: none;
+   cursor: pointer;
+   position: relative;
+   height: 30px;
+   width: 30px;
+}
+
+.btn:focus {
+   outline: none;
+}
+
+.btn .line {
+   background-color: whitesmoke;
+   height: 2px;
+   width: 20px;
+   position: absolute;
+   top: 10px;
+   left: 5px;
+   transition: transform 0.6s linear;
+}
+.btn .line1 {
+   background-color: lightblue;
+}
+
+.btn .line2 {
+   top: auto;
+   bottom: 10px;
+   background-color: whitesmoke;
+}
+
+nav.active .btn .line1 {
+   transform: rotate(-765deg) translateY(5.5px);
+}
+nav.active .btn .line2 {
+   transform: rotate(765deg) translateY(-5.5px);
+}

@@ -1,0 +1,35 @@
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   background-color: antiquewhite;
+   flex-direction: column;
+}
+
+.box {
+   background-color: azure;
+   width: 400px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   border: 2px solid greenyellow;
+   border-radius: 20px;
+   transition: transform 0.4s ease;
+}
+.box:nth-of-type(odd) {
+   transform: translateX(2000%);
+}
+.box:nth-of-type(even) {
+   transform: translateX(-2000%);
+}
+
+.box.show{
+    transform: translateX(0);
+}

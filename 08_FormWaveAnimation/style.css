@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: steelblue;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.561);
+  padding: 20px 40px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px 0;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3px solid white;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: none;
+  border-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+.form-control label span {
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  background: lightblue;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+/* .container {
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(0, 0, 0, 0.561);
+   padding: 20px 30px;
+   position: relative;
+   border-radius: 10px;
+}
+
+label {
+   color: white;
+   position: absolute;
+   left: 30px;
+}
+label:nth-of-type(1) {
+   top: 45px;
+}
+label:nth-of-type(2) {
+   top: 115px;
+}
+
+input {
+   margin: 15px 0;
+   padding: 10px 0;
+   background-color: transparent;
+   border: 0;
+   border-bottom: 3px solid white;
+   font-size: 16px;
+   color: white;
+   font-weight: bold;
+}
+
+input:focus {
+   outline: none;
+}
+
+input:focus + label span {
+   display: inline-block;
+   transform: translateY(-25px);
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn {
+   padding: 10px 0;
+   margin: 10px 0;
+   border-radius: 10px;
+   border: 0;
+   font-size: 18px;
+   font-weight: bolder;
+   background-color: rgb(35, 60, 107);
+   color: white;
+   cursor: pointer;
+}
+
+.btn:active {
+   transform: scale(0.98);
+}
+
+p {
+   color: white;
+   margin: 10px 0;
+   font-size: 14px;
+}
+
+a {
+   color: rgb(69, 113, 196);
+} */

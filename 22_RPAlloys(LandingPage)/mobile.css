@@ -1,0 +1,255 @@
+@media screen and (max-width: 480px) {
+  body {
+    width: 400px;
+  }
+
+  /* hero */
+  #hero {
+    padding: 0;
+    width: 100vw;
+  }
+
+  .heroTop p:nth-of-type(1) {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    font-weight: 600;
+    font-size: 50px;
+  }
+
+  .heroTop .redSquare {
+    width: 280px;
+    height: 280px;
+    left: 30px;
+    top: 350px;
+  }
+
+  .heroTop p:nth-of-type(2) {
+    left: 100px;
+    top: 400px;
+  }
+
+  .heroTop .rec3 {
+    left: 150px;
+    top: 420px;
+    width: 60px;
+  }
+
+  .heroTop p:nth-of-type(3) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 650px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .heroTop p:nth-of-type(4) {
+    left: 0px;
+    top: 650px;
+    font-size: 25px;
+  }
+  .heroTop p:nth-of-type(5) {
+    left: 350px;
+    top: 650px;
+    font-size: 25px;
+  }
+
+  .heroBottom {
+    margin-top: 80px;
+    height: 800px;
+  }
+
+  .heroText {
+    height: 330px;
+  }
+  .heroText p:nth-of-type(1) {
+    left: 50px;
+    font-size: 16px;
+  }
+  .heroText p:nth-of-type(2) {
+    left: 50px;
+    width: 350px;
+    top: 20px;
+    font-size: 40px;
+  }
+
+  .heroText p:nth-of-type(3) {
+    width: 350px;
+    left: 50px;
+    top: 150px;
+    font-size: 16px;
+  }
+
+  .heroStats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .heroStats div h1 {
+    font-size: 50px;
+  }
+
+  .heroStats div h1 span {
+    font-size: 50px;
+  }
+
+  .heroStats div p {
+    font-size: 20px;
+  }
+
+  /* services */
+  #services {
+    width: 100vw;
+    height: 1000px;
+  }
+
+  .servicesBackground .wing2 {
+    left: 0px;
+  }
+
+  .servicesBackground p {
+    left: 30px;
+    top: 60px;
+    color: #ec2232;
+  }
+
+  .servicesBackground h2 {
+    left: 30px;
+    top: 90px;
+    font-size: 40px;
+  }
+
+  .cards {
+    position: absolute;
+    top: 400px;
+    transform: translateX(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .cards div {
+    width: 150px;
+    height: 250px;
+  }
+
+  .cards div div {
+    width: 50px;
+    left: 5%;
+    top: 10%;
+  }
+
+  .cards .card h2 {
+    left: 5%;
+    top: 15%;
+    font-size: 20px;
+  }
+  .cards .card p {
+    left: 5%;
+    top: 40%;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .cards .card {
+    background-size: contain;
+  }
+
+  /* machines */
+
+  #machines {
+    margin-top: 20px;
+    width: 100vw;
+  }
+
+  .machinesText {
+    left: 30px;
+    top: 50px;
+  }
+
+  .machinesText h2 {
+    font-size: 40px;
+  }
+
+  .machineStats {
+    left: 0px;
+    top: 350px;
+    flex-wrap: wrap;
+  }
+
+  .machineStats div img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .machineStats div h3 {
+    font-size: 25px;
+  }
+  .machineStats div p {
+    font-size: 18px;
+  }
+
+  .machineCircle {
+    top: 750px;
+    left: 55%;
+    transform: translateX(-60%);
+  }
+
+  /* contact */
+  #contact {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+  }
+
+  .contactLeft {
+    width: 350px;
+    margin-top: 60px;
+  }
+
+  .contactLeft h2 {
+    font-size: 40px;
+  }
+
+  .contactLeft p {
+    font-size: 18px;
+  }
+
+  .contactRight {
+    width: 350px;
+    padding: 40px 20px;
+    margin-bottom: 60px;
+  }
+
+  .form-control {
+    width: 300px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.154);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  /* footer */
+  #footer {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    width: 100vw;
+  }
+
+  .footerSeperator {
+    height: 2px;
+    width: 300px;
+  }
+
+  .social ul {
+    justify-content: center;
+  }
+
+  .social p {
+    text-align: center;
+  }
+}
