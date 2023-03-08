@@ -9,14 +9,15 @@
     <style>
       body {
         background-color: #222831;
+        padding-top: 1rem;
       }
       .container {
+        font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
+        align-items: center;
         gap: 1rem;
-        font-family: Arial, Helvetica, sans-serif;
       }
       .container a {
         padding: 2rem;
@@ -26,9 +27,11 @@
         border: 2px solid #00adb5;
         border-radius: 5px;
         font-weight: bolder;
-        font-size: x-large;
+        font-size: 1.3rem;
         letter-spacing: 1px;
         transition: background-color 0.2s ease-out 100ms;
+        white-space: nowrap;
+        min-width: 320px;
       }
       .container a:hover {
         background-color: #222831;
